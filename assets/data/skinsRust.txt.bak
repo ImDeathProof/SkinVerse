@@ -1,0 +1,17 @@
+id: 1,
+name: "Soulmate | Assault Rifle",
+type: "Assault Rifle"
+price: 3500,
+image: "..\img\skins\rust\Soulmate-AR.webp"
+
+id: 2,
+name: "Pirate | Tactical Gloves",
+type: "Tactical Gloves"
+price: 7690,
+image: "..\img\skins\rust\Pirate-Tactical-Gloves.webp"
+
+id: 3,
+name: "M4A1-S | Imminent Danger",
+type: "Covert Rifle"
+price: 1.860.000,
+image: "..\img\skins\rust\Heat-Seeker-AR.webp"

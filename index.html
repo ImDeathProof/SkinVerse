@@ -1,3 +1,10 @@
+<!-- 
+    SKINVERSE
+    Es un proyecto realizado para el curso Frontend-JS de TalentoTech. El objetivo del proyecto es crear un sitio web de compra y venta de skins de videojuegos, 
+    utilizando HTML, CSS y JavaScript.
+    Desarrollado por: Elias Garcia - 2026
+-->
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -6,63 +13,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra y venta de skins | SkinVerse</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  End google fonts -->
+    <!-- Estilos skinverse -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+
 </head>
+<!-- BODY START -->
 
 <body>
+    <!-- HEADER START -->
     <header class="header">
-        <div class="header top">
-            <img src="img/logo.webp" alt="skinverse compra venta y tradeo de skins">
+        <!-- NAVIGATION CONTAINER START -->
+        <div class="navigation">
+            <div class="principal-nav">
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/img/main/logos/logo.webp"
+                            alt="SkinVerse compra, venta y tradeo de skins"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="/pages/store.html" class="nav-link">Tienda</a></li>
+                        <li><a href="/pages/support.html" class="nav-link">Soporte</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/pages/login.html" class="nav-link">Iniciar sesión</a></li>
+                        <li><a href="/pages/register.html" class="nav-link">Registrarse</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="secondary-nav">
+                <nav class="navbar">
+                    <ul class="nav-list secondary-nav-list">
+                        <li><a href="#about" class="nav-link">Nosotros</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link"><span>Skins</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#CS2" class="dropdown-link">Counter Strike 2</a></li>
+                                <li><a href="#Rust" class="dropdown-link">Rust</a></li>
+                                <li><a href="#Dota2" class="dropdown-link">Dota 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="nav">
-            <ul class="navbar">
-                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- NAVIGATION CONTAINER END -->
     </header>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
     <main>
+        <!-- HERO SECTION START -->
         <section class="hero" id="home">
-            <img src="img/hero.webp" alt="Compra, vende y tradea skins de forma segura">
+            <img src="/img/main/hero/hero_skinverse_compra_y_vende_skins_seguro.webp"
+                alt="Compra, vende y tradea skins de forma segura">
             <div class="container hero-container">
                 <h1>Comprá, vendé y tradeá skins de forma segura</h1>
                 <h2>Tradeá como un pro y conseguí las mejores skins al mejor precio.</h2>
             </div>
         </section>
+        <!-- HERO SECTION END -->
+        <!-- ABOUT-US SECTION START -->
         <section class="about" id="about">
             <div class="container about-container">
-                <h2>Sobre nosotros</h2>
+                <h2>¿Quienes somos?</h2>
                 <div class="about-content">
                     <p>
-                        SkinVerse nace en Argentina en 2026 como alternativa a los sitios de compra y venta de skins con el objetivo de ofrecer una plataforma segura, confiable y fácil de usar.
+                        SkinVerse nace en Argentina en 2026 como alternativa a los sitios de compra y venta de skins con
+                        el objetivo de ofrecer una plataforma segura, confiable y fácil de usar.
                     </p>
                     <p>
-                        Principalmente se enfoca en skins de Counter Strike, pero tambien ofrece skins de otros juegos como Rust, Dota 2, Team Fortress 2, entre otros.
+                        Principalmente se enfoca en skins de Counter Strike, pero tambien ofrece skins de otros juegos
+                        como Rust, Dota 2, Team Fortress 2, entre otros.
                     </p>
                     <p>
-                        En SkinVerse nos esforzamos por brindar un excelente servicio al cliente, ofreciendo soporte 24/7 y garantizando la seguridad de todas las transacciones realizadas en nuestra plataforma.
+                        En SkinVerse nos esforzamos por brindar un excelente servicio al cliente, ofreciendo soporte
+                        24/7 y garantizando la seguridad de todas las transacciones realizadas en nuestra plataforma.
                     </p>
                 </div>
             </div>
         </section>
+        <!-- ABOUT-US SECTION END -->
+        <!-- PRODUCTS SECTION START -->
         <section class="products" id="products">
             <div class="container products-container">
-                <h2>Skins destacados</h2>
-                <div class="popular-products-grid">
-                    <h2>Counter Strike 2</h2>
-                    <div class="popular-products-row">
+                <h2>Destacados</h2>
+                <div class="products-content">
+                    <h2 id="CS2">Counter Strike 2 <span><img src="/img/main/logos/logo_cs_sm_blk.svg" alt="cs2 logo"></span></h2>
+                    <!-- PRODUCT CAROUSEL START -->
+                    <div class="popular-products-subsection">
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="/img/skins/cs2/AK-47-The Oligarch.webp"
+                                    alt="Skinverse - CS2 - AK-47 The Oligarch">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>AK-47 | The Oligarch</h3>
+                                <p>$1.327.100,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -71,11 +135,12 @@
                         </div>
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="/img/skins/cs2/M4A1-S-Imminent Danger.webp"
+                                    alt="Skinverse - CS2 - M4A1-S Imminent Danger">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>M4A1-S | Imminent Danger</h3>
+                                <p>$1.860.000,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -84,53 +149,12 @@
                         </div>
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="/img/skins/cs2/Survival-Knife-Doppler.webp"
+                                    alt="Skinverse - CS2 - Survival Knife Doppler">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>Rust</h2>
-                    <div class="popular-products-row">
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
-                            </div>
-                            <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
-                            </div>
-                            <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
-                            </div>
-                            <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>Survival Knife | Doppler</h3>
+                                <p>$2.500.000,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -138,15 +162,17 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Dota 2</h2>
-                    <div class="popular-products-row">
+                    <!-- PRODUCT CAROUSEL END -->
+                    <h2 id="Rust">Rust <span><img src="/img/main/logos/rust-marque.svg" alt="rust logo"></span></h2>
+                    <!-- SECOND CAROUSEL START -->
+                    <div class="popular-products-subsection">
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="img/skins/rust/Heat-Seeker-AR.webp" alt="Skinverse - Rust - Heat Seeker AR">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>Heat Seeker | AR</h3>
+                                <p>$2371,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -155,11 +181,11 @@
                         </div>
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="img/skins/rust/Soulmate-AR.webp" alt="Skinverse - Rust - Soulmate AR">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>Soulmate | AR</h3>
+                                <p>$3500,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -168,11 +194,12 @@
                         </div>
                         <div class="popular-product-card">
                             <div class="card-header">
-                                <img src="img/product1.webp" alt="Skin AWP Dragon Lore">
+                                <img src="img/skins/rust/Pirate-Tactical-Gloves.webp"
+                                    alt="Skinverse - Rust - Pirate | Tactical Gloves">
                             </div>
                             <div class="card-body">
-                                <h3>AWP Dragon Lore</h3>
-                                <p>Precio: $5000</p>
+                                <h3>Pirate | Tactical Gloves</h3>
+                                <p>$7690,00</p>
                             </div>
                             <div class="card-footer">
                                 <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
@@ -180,31 +207,123 @@
                             </div>
                         </div>
                     </div>
+                    <!-- SECOND CAROUSEL END -->
+                    <h2 id="Dota2">Dota 2 <span><img src="/img/main/logos/dota2_logo_symbol.png" alt="dota2 logo"></span></h2>
+                    <!-- TERTIARY CAROUSEL START -->
+                    <div class="popular-products-subsection" >
+                        <div class="popular-product-card">
+                            <div class="card-header">
+                                <img src="img/skins/dota2/Capa-del-Artificio-Oscuro.webp"
+                                    alt="Skinverse - Dota 2 - Capa del Artificio Oscuro">
+                            </div>
+                            <div class="card-body">
+                                <h3>Capa del Artificio Oscuro</h3>
+                                <p>$190.000,00</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
+                                <button class="card-btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="popular-product-card">
+                            <div class="card-header">
+                                <img src="img/skins/dota2/Cuernos-Fractales-del-Abismo-Interior.webp"
+                                    alt="Skinverse - Dota 2 - Cuernos Fractales del Abismo Interior">
+                            </div>
+                            <div class="card-body">
+                                <h3>Cuernos Fractales del Abismo Interior</h3>
+                                <p>$33.000,00</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
+                                <button class="card-btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="popular-product-card">
+                            <div class="card-header">
+                                <img src="img/skins/dota2/Hoja-Carmesí-de-la-Orden-Perdida-con-Inscripciones.webp"
+                                    alt="Skinverse - Dota 2 - Hoja Carmesí de la Orden Perdida con Inscripciones">
+                            </div>
+                            <div class="card-body">
+                                <h3>Hoja Carmesí de la Orden Perdida con Inscripciones</h3>
+                                <p>$1.200.000,00</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
+                                <button class="card-btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TERTIARY CAROUSEL END -->
+                </div>
+                <!-- PRODUCTS CONTENT END -->
+            </div>
+        </section>
+        <!-- PRODUCTS SECTION END -->
+        <!-- SERVICES SECTION START -->
+        <section class="services" id="services">
+            <div class="container services-container">
+                <div class="services-content">
+                    <div>
+                        <h2>¿Por qué tradear con <span>SkinVerse</span>?</h2>
+                        <p>
+                            Empezá hoy <a href="/pages/services.html" class="btn-cta-services">Registrate</a>
+                        </p>
+                    </div>
+                    <ol>
+                        <li><i class="bi bi-lock"></i>Transacciones seguras con protección antifraude</li>
+                        <li><i class="bi bi-shield-check"></i>Más de 1.000 usuarios confiaron en nosotros</li>
+                        <li><i class="bi bi-cash"></i> Multiples medios de pago</li>
+                        <li><i class="bi bi-headset"></i> Atención en español 24/7</li>
+                    </ol>
                 </div>
             </div>
         </section>
-        <hr>
-        <section class="services" id="services">
-            <div class="container services-container">
-                <h2>Sección N°4</h2>
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
-                    <li>Elemento 4</li>
-                </ul>
+        <!-- SERVICES SECTION END -->
+        <!-- NEWSLETTER SECTION START -->
+        <section class="newsletter" id="newsletter">
+            <div class="container newsletter-container">
+                <h2>Suscribite a nuestro newsletter!</h2>
+                <form method="POST" action="">
+                    <input name="email" type="email" placeholder="Ingresá tu email" required>
+                    <input type="hidden" name="_redirect" value="">
+                    <button type="submit">Suscribirse</button>
+                </form>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <div class="container contact-container">
-                <h2>Sección N°5</h2>
-                
-            </div>
-        </section>
+        <!-- NEWSLETTER SECTION END -->
     </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
     <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col logo">
+                    <img src="img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins">
+                    <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
+                </div>
+                <div class="footer-col footer-nav">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/pages/store.html">Tienda</a></li>
+                        <li><a href="/pages/support.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Email: info@skinverse.com</p>
+                    <p>Teléfono: +54 9 11 1234 5678</p>
+                    <p><a href="/pages/support.html">Contactanos</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkinVerse. Todos los derechos reservados.</p>
+            </div>
 
     </footer>
+    <!-- FOOTER END -->
 </body>
+<!-- BODY END -->
 
 </html>

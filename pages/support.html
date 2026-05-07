@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte | SkinVerse</title>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  End google fonts -->
+    <!-- Estilos skinverse -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/support.css">
+</head>
+<!-- BODY START -->
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <!-- NAVIGATION CONTAINER START -->
+        <div class="navigation">
+            <div class="principal-nav">
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/img/main/logos/logo.webp"
+                            alt="SkinVerse compra, venta y tradeo de skins"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="/pages/store.html" class="nav-link">Tienda</a></li>
+                        <li><a href="/pages/support.html" class="nav-link">Soporte</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/pages/login.html" class="nav-link">Iniciar sesión</a></li>
+                        <li><a href="/pages/register.html" class="nav-link">Registrarse</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="secondary-nav">
+                <nav class="navbar">
+                    <ul class="nav-list secondary-nav-list">
+                        <li><a href="#faq" class="nav-link">FAQ'S</a></li>
+                        <li><a href="#contact-form" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- NAVIGATION CONTAINER END -->
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
+    <main>
+        <section class="hero-support" id="hero">
+            <img src="/img/main/hero/hero_skinverse_support.webp" alt="">
+            <div class="container hero-support-container">
+                <h1>¿Necesitas ayuda?</h1>
+                <p>Respondemos en menos de 24 horas. También podés encontrar respuestas rápidas abajo.</p>
+                <a href="#contact-form" class="btn support-cta ">Contáctanos</a>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container faq-container">
+                <h2>FAQ's</h2>
+                <details>
+                    <summary>¿Cómo puedo comprar una skin?</summary>
+                    <p>Para comprar una skin, simplemente navega por nuestra tienda, selecciona la skin que deseas y haz clic en "Comprar". Sigue las instrucciones para completar tu compra de forma segura.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo puedo vender una skin?</summary>
+                    <p>Para vender una skin, ve a tu perfil, selecciona la opción "Vender Skin", sube tu skin y establece un precio. Una vez que alguien compre tu skin, recibirás el pago de forma segura.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo puedo contactar al soporte?</summary>
+                    <p>Puedes contactarnos a través del formulario de contacto en esta página, enviándonos un email a support@skinverse.com o por WhatsApp al +54 9 11 1234 5678. Respondemos en menos de 24 horas.</p>
+                </details>
+                <details>
+                    <summary>¿Qué métodos de pago aceptan?</summary>
+                    <p>Aceptamos diversos métodos de pago, incluyendo tarjetas de crédito, MercadoPago, PayPal, Transferencias bancarias y Criptomonedas. Para más detalles, visita nuestra sección de métodos de pago en la tienda.</p>
+                </details>
+            </div>
+        </section>
+        <section class="form" id="contact-form">
+            <div class="contact-form-container">
+                <h2>Contáctanos</h2>
+                <form id="contact-form" action="/submit-support" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="btn support-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col logo">
+                    <img src="/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins">
+                    <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
+                </div>
+                <div class="footer-col footer-nav">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/pages/store.html">Tienda</a></li>
+                        <li><a href="/pages/support.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Email: info@skinverse.com</p>
+                    <p>Teléfono: +54 9 11 1234 5678</p>
+                    <p><a href="/pages/support.html">Contactanos</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkinVerse. Todos los derechos reservados.</p>
+            </div>
+
+    </footer>
+    <!-- FOOTER END -->
+</body>
+<!-- BODY END -->
+
+</html>
