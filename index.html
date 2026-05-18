@@ -33,49 +33,36 @@
 <body>
     <!-- HEADER START -->
     <header class="header">
-        <!-- NAVIGATION CONTAINER START -->
-        <div class="navigation">
-            <div class="principal-nav">
-                <div class="header-logo">
-                    <a href="/index.html"><img src="/img/main/logos/logo.webp"
-                            alt="SkinVerse compra, venta y tradeo de skins"></a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="/pages/store.html" class="nav-link">Tienda</a></li>
-                        <li><a href="/pages/support.html" class="nav-link">Soporte</a></li>
-                    </ul>
-                </nav>
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar...">
-                    <button><i class="bi bi-search"></i></button>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="/pages/login.html" class="nav-link">Iniciar sesión</a></li>
-                        <li><a href="/pages/register.html" class="nav-link">Registrarse</a></li>
-                    </ul>
-                </nav>
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="/index.html"><img src="/img/main/logos/logo.webp" alt="SkinVerse compra, venta y tradeo de skins"></a>
             </div>
-            <div class="secondary-nav">
-                <nav class="navbar">
-                    <ul class="nav-list secondary-nav-list">
-                        <li><a href="#about" class="nav-link">Nosotros</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link"><span>Skins</span> <i class="bi bi-chevron-down"></i></a>
-                            <ul class="dropdown-content">
-                                <li><a href="#CS2" class="dropdown-link">Counter Strike 2</a></li>
-                                <li><a href="#Rust" class="dropdown-link">Rust</a></li>
-                                <li><a href="#Dota2" class="dropdown-link">Dota 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
-                    </ul>
-                </nav>
+            <button class="menu-toggle" aria-label="Desplegar menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar skins, juegos y más...">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+            <div class="auth-nav">
+                <a href="/pages/login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="/pages/signup.html" class="btn-auth">Registrarse</a>
             </div>
         </div>
-        <!-- NAVIGATION CONTAINER END -->
+        <div class="header-bottom">
+            <nav class="main-nav">
+                <ul class="main-list list">
+                    <li><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="/pages/store.html">Tienda</a></li>
+                    <li><a class="nav-link" href="/pages/support.html">Soporte</a></li>
+                </ul>
+                <ul class="page-list list">
+                    <li><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
+                    <li><a class="nav-link" href="#products">Destacados</a></li>
+                    <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- HEADER END -->
     <!-- MAIN START -->
@@ -116,7 +103,8 @@
             <div class="container products-container">
                 <h2>Destacados</h2>
                 <div class="products-content">
-                    <h2 id="CS2">Counter Strike 2 <span><img src="/img/main/logos/logo_cs_sm_blk.svg" alt="cs2 logo"></span></h2>
+                    <h2 id="CS2">Counter Strike 2 <span><img src="/img/main/logos/logo_cs_sm_blk.svg"
+                                alt="cs2 logo"></span></h2>
                     <!-- PRODUCT CAROUSEL START -->
                     <div class="popular-products-subsection">
                         <div class="popular-product-card">
@@ -208,9 +196,10 @@
                         </div>
                     </div>
                     <!-- SECOND CAROUSEL END -->
-                    <h2 id="Dota2">Dota 2 <span><img src="/img/main/logos/dota2_logo_symbol.png" alt="dota2 logo"></span></h2>
+                    <h2 id="Dota2">Dota 2 <span><img src="/img/main/logos/dota2_logo_symbol.png"
+                                alt="dota2 logo"></span></h2>
                     <!-- TERTIARY CAROUSEL START -->
-                    <div class="popular-products-subsection" >
+                    <div class="popular-products-subsection">
                         <div class="popular-product-card">
                             <div class="card-header">
                                 <img src="img/skins/dota2/Capa-del-Artificio-Oscuro.webp"

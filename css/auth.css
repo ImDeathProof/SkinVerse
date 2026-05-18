@@ -4,17 +4,111 @@
 */
 
 /* ================================================= */
-/* LOGIN: */
+/* LOGIN/SIGNUP */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    background-image: linear-gradient(to right bottom, var(--primary-color-transparent) 20%, transparent 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.form-logo {
+    width: 150px;
+    margin-bottom: 1.5rem;
+}
+
+.form-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.form-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.auth-form label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.auth-form input {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.auth-btn {
+    border: none;
+}
+
+.auth-btn:hover {
+    background-image: linear-gradient(to right bottom, var(--primary-color) 20%, var(--primary-hover) 100%);
+    transition: background-image 0.3s ease;
+}
+
+.auth-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.auth-links a {
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.remember-me {
+    display:flex;
+
+}
 
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
 
 
-/* FIN DE LOGIN */
-/* ================================================= */
-
-/* REGISTRO: */
-
-
-
-/* FIN DE REGISTRO */
-/* ================================================= */
+/* ------------------ */

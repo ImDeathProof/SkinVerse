@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,57 +19,351 @@
     <link rel="stylesheet" href="/css/store.css">
 </head>
 <!-- BODY START -->
+
 <body>
     <!-- HEADER START -->
     <header class="header">
-        <!-- NAVIGATION CONTAINER START -->
-        <div class="navigation">
-            <div class="principal-nav">
-                <div class="header-logo">
-                    <a href="/index.html"><img src="/img/main/logos/logo.webp"
-                            alt="SkinVerse compra, venta y tradeo de skins"></a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                        <li><a href="/pages/store.html" class="nav-link">Tienda</a></li>
-                        <li><a href="/pages/support.html" class="nav-link">Soporte</a></li>
-                    </ul>
-                </nav>
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar...">
-                    <button><i class="bi bi-search"></i></button>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="/pages/login.html" class="nav-link">Iniciar sesión</a></li>
-                        <li><a href="/pages/register.html" class="nav-link">Registrarse</a></li>
-                    </ul>
-                </nav>
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="/index.html"><img src="/img/main/logos/logo.webp" alt="SkinVerse compra, venta y tradeo de skins"></a>
             </div>
-            <div class="secondary-nav">
-                <nav class="navbar">
-                    <ul class="nav-list secondary-nav-list">
-                        <li><a href="#about" class="nav-link">Nosotros</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link"><span>Skins</span> <i class="bi bi-chevron-down"></i></a>
-                            <ul class="dropdown-content">
-                                <li><a href="#CS2" class="dropdown-link">Counter Strike 2</a></li>
-                                <li><a href="#Rust" class="dropdown-link">Rust</a></li>
-                                <li><a href="#Dota2" class="dropdown-link">Dota 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
-                    </ul>
-                </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar skins, juegos y más...">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+            <div class="auth-nav">
+                <a href="/pages/login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="/pages/signup.html" class="btn-auth">Registrarse</a>
             </div>
         </div>
-        <!-- NAVIGATION CONTAINER END -->
+        <div class="header-bottom">
+            <nav class="main-nav">
+                <ul class="main-list list">
+                    <li><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="/pages/store.html">Tienda</a></li>
+                    <li><a class="nav-link" href="/pages/support.html">Soporte</a></li>
+                </ul>
+                <!-- <ul class="page-list list">
+                    <li><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
+                    <li><a class="nav-link" href="#products">Destacados</a></li>
+                    <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                </ul> -->
+            </nav>
+        </div>
     </header>
     <!-- HEADER END -->
     <!-- MAIN START -->
     <main>
-
+        <section class="store">
+            <div class="container store-container">
+                <div class="store-content grid-container">
+                    <!-- STORE TOP -->
+                    <div class="store-top">
+                        <h1>Tienda de Skins</h1>
+                        <!-- <nav class="filter-nav mini-nav">
+                            <ul class="filter-list">
+                                <li><a href="#cs2" class="filter-link">CS2</a></li>
+                                <li><a href="#rust" class="filter-link">Rust</a></li>
+                                <li><a href="#dota2" class="filter-link">Dota2</a></li>
+                            </ul>
+                        </nav> -->
+                    </div>
+                    <!-- END STORE TOP -->
+                    <!-- SIDEBAR START -->
+                    <div class="left-sidebar">
+                        <nav class="sidebar-nav">
+                            <h4>Juego:</h4>
+                            <ul class="nav-sidebar-list">
+                                <li><a href="#cs2" class="nav-link">CS2</a></li>
+                                <li><a href="#rust" class="nav-link">Rust</a></li>
+                                <li><a href="#dota2" class="nav-link">Dota2</a></li>
+                            </ul>
+                            <hr>
+                            <h4>Filtrar:</h4>
+                            <ul class="nav-sidebar-list">
+                                <li><a href="#" class="nav-link">Filtro 1</a></li>
+                                <li><a href="#" class="nav-link">Filtro 2</a></li>
+                                <li><a href="#" class="nav-link">Filtro 3</a></li>
+                                <li><a href="#" class="nav-link">Filtro 4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- SIDEBAR-END -->
+                    <!-- STORE MAIN-CONTENT -->
+                    <div class="store-main">
+                        <div class="store-main-content">
+                            <!-- Contenido principal de la tienda -->
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-header">
+                                    <img src="/img/skins/cs2/AK-47-The Oligarch.webp" alt="ak-47-the oligarch" class="card-img">
+                                </div>
+                                <div class="card-body">
+                                    <h3>AK-47 | The Oligarch</h3>
+                                    <span class="price">$1.327.100,00</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn buy-btn">Comprar</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- STORE MAIN-CONTENT END -->
+                </div>
+            </div>
+        </section>
     </main>
     <!-- MAIN END -->
     <!-- FOOTER START -->
