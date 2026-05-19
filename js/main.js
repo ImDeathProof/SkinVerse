@@ -6,15 +6,21 @@
 // Control del menú hamburguesa en mobile
 // =============================
 
-const toggle = document.getElementById("menuToggle");
-const navbar = document.querySelector(".navbar");
+const toggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".header-bottom");
 
 toggle.addEventListener("click", () => {
+
     navbar.classList.toggle("open");
+
+    const isOpen = navbar.classList.contains("open");
+
+    toggle.setAttribute("aria-expanded", isOpen);
+
 });
 
-// Cerrar menú al hacer click en un link (mobile)
-const navLinks = document.querySelectorAll(".nav-links a");
+// Todos los links del nav
+const navLinks = document.querySelectorAll(".main-nav a");
 
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
