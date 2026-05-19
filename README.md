@@ -4,7 +4,7 @@
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green) ![Practice Project](https://img.shields.io/badge/TYPE-PRACTICE%20PROJECT-yellow)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Responsive](https://img.shields.io/badge/RESPONSIVE-YES-blue)
-[![Live Demo](https://img.shields.io/badge/DEMO-ONLINE-success?logo=netlify&logoColor=white)](https://tusitio.vercel.app) [![Badge repo Github](https://img.shields.io/badge/GITHUB-REPO-important?logo=github)](https://github.com/ImDeathProof/SkinVerse)
+[![Live Demo](https://img.shields.io/badge/DEMO-ONLINE-success?logo=netlify&logoColor=white)](https://skinverse.netlify.app) [![Badge repo Github](https://img.shields.io/badge/GITHUB-REPO-important?logo=github)](https://github.com/ImDeathProof/SkinVerse)
 
 ---
 
