@@ -179,8 +179,8 @@
     font-size: 1rem;
     background-color: transparent;
     color: var(--text-light);
-    
-    
+
+
 }
 
 .contact-form-container form input:focus,
@@ -194,7 +194,7 @@
     resize: none;
 }
 
-.support-btn{
+.support-btn {
     padding: 0.75rem;
     background-image: linear-gradient(to bottom right, var(--primary-color), var(--primary-color-transparent));
     color: var(--text-light);
@@ -212,16 +212,63 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
+    .hero-support {
+        height: 80vh;
+    }
+
+    .hero-support img {
+        height: 100%;
+    }
 }
 
 @media (max-width: 992px) {
+    .hero-support-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-support-container p {
+        font-size: 1rem;
+    }
+
+    .support-cta {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .contact-form-container {
+        width: 60%;
+        margin: 0;
+    }
+
+    .contact-form-container h2 {
+        font-size: 2rem;
+    }
+
 }
 
 @media (max-width: 768px) {
+    .hero-support-container h1 {
+        font-size: 2rem;
+    }
+
+    .hero-support-container p {
+        font-size: 0.9rem;
+    }
+
+    .support-cta {
+        font-size: 1rem;
+    }
+
+    .contact-form-container {
+        width: 90%;
+    }
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 
 /* ------------------ */

@@ -281,15 +281,20 @@ li {
 .auth-nav {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .auth-nav a {
     color: var(--text-light);
-    text-decoration: none;
+    text-decoration: none;;
 }
 
 .auth-nav a:hover {
     color: var(--primary-color);
+}
+
+.auth-nav .bi-cart-fill {
+    font-size: 1.5rem;
 }
 
 /* HEADER BOTTOM */
