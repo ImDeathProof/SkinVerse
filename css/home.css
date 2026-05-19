@@ -327,7 +327,7 @@
 .services-container ol {
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
 }
 
 .services-container ol li {
@@ -403,6 +403,19 @@
 }
 
 @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero img {
+        height: 80vh;
+        object-fit: cover;
+    }
+
     .popular-products-subsection {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -414,10 +427,39 @@
         width: 100%;
     }
 
+    .container {
+        padding: 0 0;
+    }
+
+    .products-content h2 {
+        font-size: 1.2rem;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .products-content h2 span img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    }
+
+    .services-container {
+        padding: 0 1rem;
+    }
+
     .services-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .services-content ol {
+        margin-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-container h2 {
+        font-size: 1.8rem;
     }
 
     .newsletter-container form input[type="email"] {
@@ -426,6 +468,35 @@
 }
 
 @media (max-width: 480px) {
+    .hero-container {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .hero img {
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    .products-content h2 {
+        font-size: 1rem;
+    }
+
+    .services-content h2 {
+        font-size: 2rem;
+    }
+
+    .services-content h2 span {
+        font-size: 2.4rem;
+    }
 }
 
 
