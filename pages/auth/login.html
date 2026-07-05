@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi carrito | SkinVerse</title>
-    <link rel="canonical" href="https://skinverse.netlify.app/pages/cart.html">
+    <title>Iniciar sesión | SkinVerse</title>
+    <link rel="canonical" href="https://skinverse.netlify.app/pages/auth/login.html">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
@@ -17,32 +17,32 @@
     <!--  End google fonts -->
     <!-- Estilos skinverse -->
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/pages/auth/auth.css">
 
     <!-- SEO BASICO -->
     <meta name="description"
-        content="SkinVerse es una web argentina para comprar skins de CS2, RUST, Dota 2 y más. Tradeá como un pro y conseguí las mejores skins al mejor precio.">
+        content="Iniciá sesión en SkinVerse para comprar, vender y tradear skins de CS2, RUST, Dota 2 y más. Accedé a tu cuenta y disfrutá de la mejor experiencia en compra de skins.">
     <meta name="keywords"
         content="comprar skins cs2, skins cs2, skins rust, skins dota 2, dota, vender skins seguro, comprar skins seguro, tradeo de skins, skinverse">
     <meta name="author" content="SkinVerse">
 
     <!-- Open Graph (Facebook, WhatsApp, Instagram) -->
-    <meta property="og:title" content="SkinVerse - Mi carrito">
+    <meta property="og:title" content="SkinVerse - Iniciar sesión">
     <meta property="og:description"
-        content="SkinVerse es una web argentina para comprar skins de CS2, RUST, Dota 2 y más. Tradeá como un pro y conseguí las mejores skins al mejor precio.">
+        content="Iniciá sesión en SkinVerse para comprar, vender y tradear skins de CS2, RUST, Dota 2 y más. Accedé a tu cuenta y disfrutá de la mejor experiencia en compra de skins.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://skinverse.netlify.app/pages/cart.html">
-    <meta property="og:image" content="https://skinverse.netlify.app/img/main/logos/logo_1200x630.png">
+    <meta property="og:url" content="https://skinverse.netlify.app/pages/auth/login.html">
+    <meta property="og:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
     <meta property="og:site_name" content="SkinVerse">
     <meta property="og:locale" content="es_AR">
 
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SkinVerse - Mi carrito">
+    <meta name="twitter:title" content="SkinVerse - Iniciar sesión">
     <meta name="twitter:description"
-        content="SkinVerse es una web argentina para comprar skins de CS2, RUST, Dota 2 y más. Tradeá como un pro y conseguí las mejores skins al mejor precio.">
-    <meta name="twitter:image" content="https://skinverse.netlify.app/img/main/logos/logo_1200x630.png">
+        content="Iniciá sesión en SkinVerse para comprar, vender y tradear skins de CS2, RUST, Dota 2 y más. Accedé a tu cuenta y disfrutá de la mejor experiencia en compra de skins.">
+    <meta name="twitter:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
 
 
     <!-- FAVICON E ICONOS PARA DIFERENTES PLATAFORMAS -->
@@ -62,7 +62,7 @@
     <header class="header">
         <div class="header-top">
             <div class="header-logo">
-                <a href="/index.html"><img src="/img/main/logos/logo.webp"
+                <a href="/index.html"><img src="/assets/img/main/logos/logo.webp"
                         alt="SkinVerse compra, venta y tradeo de skins" loading="lazy"></a>
             </div>
             <button class="menu-toggle" aria-label="Desplegar menu" aria-expanded="false" aria-controls="main-nav">
@@ -73,22 +73,17 @@
                 <button><i class="bi bi-search"></i></button>
             </div>
             <div class="auth-nav">
-                <a href="/pages/login.html" class="btn-auth">Iniciar sesión</a>
-                <a href="/pages/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>
+                <a href="/pages/cart/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
             </div>
         </div>
         <div class="header-bottom">
             <nav class="main-nav">
                 <ul class="main-list list">
                     <li><a class="nav-link" href="/index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="/pages/store.html">Tienda</a></li>
-                    <li><a class="nav-link" href="/pages/support.html">Soporte</a></li>
-                </ul>
-                <ul class="page-list list">
-                    <li><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
-                    <li><a class="nav-link" href="#products">Destacados</a></li>
-                    <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                    <li><a class="nav-link" href="/pages/store/store.html">Tienda</a></li>
+                    <li><a class="nav-link" href="/pages/support/support.html">Soporte</a></li>
                 </ul>
             </nav>
         </div>
@@ -96,8 +91,32 @@
     <!-- HEADER END -->
     <!-- MAIN START -->
     <main>
-        <h2>Proximamente</h2>
-        <h3>Esta página está en desarrollo</h3>
+        <section class="form-section">
+            <div class="container form-container">
+                <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse logo blanco" class="form-logo" loading="lazy">
+                <h2>Inicia sesión</h2>
+                <form action="/api/login" method="POST" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="remember" class="remember-me">
+                    </div>
+                    <label for="remember" class="remember-me">
+                        <input type="checkbox" id="remember" name="remember" class="checkbox">
+                        Recordarme
+                    </label>
+                    <button type="submit" class="btn auth-btn">Iniciar sesión</button>
+                </form>
+                <div class="auth-links">
+                    <a href="/pages/forgot_password.html">¿Olvidaste tu contraseña?</a>
+                    <p>¿No tienes una cuenta? <a href="/pages/signup.html">Regístrate</a></p>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- MAIN END -->
     <!-- FOOTER START -->
@@ -105,22 +124,22 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">
                     <h3>Navegación</h3>
                     <ul>
                         <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/pages/store.html">Tienda</a></li>
-                        <li><a href="/pages/support.html">Soporte</a></li>
+                        <li><a href="/pages/store/store.html">Tienda</a></li>
+                        <li><a href="/pages/support/support.html">Soporte</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contacto</h3>
                     <p>Email: info@skinverse.com</p>
                     <p>Teléfono: +54 9 11 1234 5678</p>
-                    <p><a href="pages/support.html">Contactanos</a></p>
+                    <p><a href="/pages/support/support.html">Contactanos</a></p>
                 </div>
             </div>
             <div class="footer-bottom">

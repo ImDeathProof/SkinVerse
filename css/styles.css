@@ -297,6 +297,20 @@ li {
     font-size: 1.5rem;
 }
 
+.cart-link {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+}
+
 /* HEADER BOTTOM */
 
 .header-bottom {
@@ -325,7 +339,10 @@ li {
     color: var(--primary-color);
 }
 
-
+.nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
 
 
 

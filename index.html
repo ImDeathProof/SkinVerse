@@ -41,7 +41,7 @@
         content="SkinVerse es una web argentina para comprar skins de CS2, RUST, Dota 2 y más. Tradeá como un pro y conseguí las mejores skins al mejor precio.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://skinverse.netlify.app">
-    <meta property="og:image" content="https://skinverse.netlify.app/img/main/logos/logo_1200x630.png">
+    <meta property="og:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
     <meta property="og:site_name" content="SkinVerse">
     <meta property="og:locale" content="es_AR">
 
@@ -51,7 +51,7 @@
     <meta name="twitter:title" content="SkinVerse - Compra y venta de skins">
     <meta name="twitter:description"
         content="SkinVerse es una web argentina para comprar skins de CS2, RUST, Dota 2 y más. Tradeá como un pro y conseguí las mejores skins al mejor precio.">
-    <meta name="twitter:image" content="https://skinverse.netlify.app/img/main/logos/logo_1200x630.png">
+    <meta name="twitter:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
 
 
     <!-- FAVICON E ICONOS PARA DIFERENTES PLATAFORMAS -->
@@ -61,9 +61,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="SkinVerse" />
     <link rel="manifest" href="/site.webmanifest" />
-    
-    
+
+
     <meta name="robots" content="index, follow">
+
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/cartManager.js" defer></script>
+    <script src="/js/home.js" defer></script>
 
 </head>
 <!-- BODY START -->
@@ -73,7 +78,7 @@
     <header class="header">
         <div class="header-top">
             <div class="header-logo">
-                <a href="/index.html"><img src="/img/main/logos/logo.webp"
+                <a href="/index.html"><img src="assets/img/main/logos/logo.webp"
                         alt="SkinVerse compra, venta y tradeo de skins" loading="lazy"></a>
             </div>
             <button class="menu-toggle" aria-label="Desplegar menu" aria-expanded="false" aria-controls="main-nav">
@@ -84,17 +89,18 @@
                 <button><i class="bi bi-search"></i></button>
             </div>
             <div class="auth-nav">
-                <a href="/pages/login.html" class="btn-auth">Iniciar sesión</a>
-                <a href="/pages/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
+                <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>
+                <a href="/pages/cart/cart.html" class="nav-link cart-link"><i class="bi bi-cart-fill"></i><span
+                        class="cart-count">0</span></a>
             </div>
         </div>
         <div class="header-bottom">
             <nav class="main-nav">
                 <ul class="main-list list">
                     <li><a class="nav-link" href="/index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="/pages/store.html">Tienda</a></li>
-                    <li><a class="nav-link" href="/pages/support.html">Soporte</a></li>
+                    <li><a class="nav-link" href="/pages/store/store.html">Tienda</a></li>
+                    <li><a class="nav-link" href="/pages/support/support.html">Soporte</a></li>
                 </ul>
                 <ul class="page-list list">
                     <li><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
@@ -109,11 +115,15 @@
     <main>
         <!-- HERO SECTION START -->
         <section class="hero" id="home">
-            <img src="/img/main/hero/hero_skinverse_compra_y_vende_skins_seguro.webp"
+            <img src="assets/img/main/hero/hero_skinverse_compra_y_vende_skins_seguro.webp"
                 alt="Compra, vende y tradea skins de forma segura" loading="lazy">
             <div class="container hero-container">
                 <h1>Comprá, vendé y tradeá skins de forma segura</h1>
                 <h2>Tradeá como un pro y conseguí las mejores skins al mejor precio.</h2>
+                <div class="hero-cta-container">
+                    <a href="/pages/store/store.html" class="btn-cta">Ir a la tienda</a>
+                    <a href="/pages/auth/signup.html" class="btn-cta-secondary">Registrate</a>
+                </div>
             </div>
         </section>
         <!-- HERO SECTION END -->
@@ -143,145 +153,25 @@
             <div class="container products-container">
                 <h2>Destacados</h2>
                 <div class="products-content">
-                    <h2 id="CS2">Counter Strike 2 <span><img src="/img/main/logos/logo_cs_sm_blk.svg"
+                    <h2 id="CS2">Counter Strike 2 <span><img src="assets/img/main/logos/logo_cs_sm_blk.svg"
                                 alt="cs2 logo" loading="lazy"></span></h2>
                     <!-- PRODUCT CAROUSEL START -->
-                    <div class="popular-products-subsection">
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="/img/skins/cs2/AK-47-The Oligarch.webp"
-                                    alt="Skinverse - CS2 - AK-47 The Oligarch" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>AK-47 | The Oligarch</h3>
-                                <p>$1.327.100,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="/img/skins/cs2/M4A1-S-Imminent Danger.webp"
-                                    alt="Skinverse - CS2 - M4A1-S Imminent Danger" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>M4A1-S | Imminent Danger</h3>
-                                <p>$1.860.000,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="/img/skins/cs2/Survival-Knife-Doppler.webp"
-                                    alt="Skinverse - CS2 - Survival Knife Doppler" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Survival Knife | Doppler</h3>
-                                <p>$2.500.000,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="popular-products-subsection cs2-products">
+                        <!-- Cards will be generated by JavaScript -->
+                    </div> 
                     <!-- PRODUCT CAROUSEL END -->
-                    <h2 id="Rust">Rust <span><img src="/img/main/logos/rust-marque.svg" alt="rust logo" loading="lazy"></span></h2>
+                    <h2 id="Rust">Rust <span><img src="assets/img/main/logos/rust-marque.svg" alt="rust logo"
+                                loading="lazy"></span></h2>
                     <!-- SECOND CAROUSEL START -->
-                    <div class="popular-products-subsection">
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/rust/Heat-Seeker-AR.webp" alt="Skinverse - Rust - Heat Seeker AR" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Heat Seeker | AR</h3>
-                                <p>$2371,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/rust/Soulmate-AR.webp" alt="Skinverse - Rust - Soulmate AR" loading="lazy"> 
-                            </div>
-                            <div class="card-body">
-                                <h3>Soulmate | AR</h3>
-                                <p>$3500,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/rust/Pirate-Tactical-Gloves.webp"
-                                    alt="Skinverse - Rust - Pirate | Tactical Gloves" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Pirate | Tactical Gloves</h3>
-                                <p>$7690,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
+                    <div class="popular-products-subsection rust-products">
+                        <!-- Cards will be generated by JavaScript -->
                     </div>
                     <!-- SECOND CAROUSEL END -->
-                    <h2 id="Dota2">Dota 2 <span><img src="/img/main/logos/dota2_logo_symbol.png"
-                                alt="dota2 logo" loading="lazy"></span></h2>
+                    <h2 id="Dota2">Dota 2 <span><img src="assets/img/main/logos/dota2_logo_symbol.png" alt="dota2 logo"
+                                loading="lazy"></span></h2>
                     <!-- TERTIARY CAROUSEL START -->
-                    <div class="popular-products-subsection">
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/dota2/Capa-del-Artificio-Oscuro.webp"
-                                    alt="Skinverse - Dota 2 - Capa del Artificio Oscuro" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Capa del Artificio Oscuro</h3>
-                                <p>$190.000,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/dota2/Cuernos-Fractales-del-Abismo-Interior.webp"
-                                    alt="Skinverse - Dota 2 - Cuernos Fractales del Abismo Interior" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Cuernos Fractales del Abismo Interior</h3>
-                                <p>$33.000,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
-                        <div class="popular-product-card">
-                            <div class="card-header">
-                                <img src="img/skins/dota2/Hoja-Carmesí-de-la-Orden-Perdida-con-Inscripciones.webp"
-                                    alt="Skinverse - Dota 2 - Hoja Carmesí de la Orden Perdida con Inscripciones" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3>Hoja Carmesí de la Orden Perdida con Inscripciones</h3>
-                                <p>$1.200.000,00</p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="card-btn-secondary"><i class="bi bi-cart-plus"></i></button>
-                                <button class="card-btn-primary">Comprar</button>
-                            </div>
-                        </div>
+                    <div class="popular-products-subsection dota2-products">
+                        <!-- Cards will be generated by JavaScript -->
                     </div>
                     <!-- TERTIARY CAROUSEL END -->
                 </div>
@@ -296,7 +186,7 @@
                     <div>
                         <h2>¿Por qué tradear con <span>SkinVerse</span>?</h2>
                         <p>
-                            Empezá hoy <a href="/pages/signup.html" class="btn-cta-services">Registrate</a>
+                            Empezá hoy <a href="/pages/auth/signup.html" class="btn-cta-services">Registrate</a>
                         </p>
                     </div>
                     <ol>
@@ -328,22 +218,23 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins"
+                        loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">
                     <h3>Navegación</h3>
                     <ul>
                         <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/pages/store.html">Tienda</a></li>
-                        <li><a href="/pages/support.html">Soporte</a></li>
+                        <li><a href="/pages/store/store.html">Tienda</a></li>
+                        <li><a href="/pages/support/support.html">Soporte</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contacto</h3>
                     <p>Email: info@skinverse.com</p>
                     <p>Teléfono: +54 9 11 1234 5678</p>
-                    <p><a href="/pages/support.html">Contactanos</a></p>
+                    <p><a href="/pages/support/support.html">Contactanos</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -352,7 +243,7 @@
 
     </footer>
     <!-- FOOTER END -->
-    <script src="/js/main.js"></script>
+
 </body>
 <!-- BODY END -->
 

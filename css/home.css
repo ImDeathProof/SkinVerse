@@ -66,8 +66,51 @@
 
 .hero-container {
     position: absolute;
+    top: 10%;
     padding: 2rem 4rem;
     z-index: 2;
+    gap: 1rem;
+}
+
+.hero-cta-container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+}
+
+.btn-cta {
+    padding: 0.75rem 1.5rem;
+    background-image: linear-gradient(to bottom right, var(--secondary-color), var(--tertiary-color), var(--primary-color));
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--tertiary-color), var(--secondary-color));
+    transform: translateY(-4px);
+}
+
+.btn-cta-secondary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--background-color);
+    color: var(--text-light);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-4px);
 }
 
 /* END HERO SECTION */
