@@ -113,3 +113,30 @@
 .btn-payment-cancel:hover {
     background-color: var(--primary-color);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 768px){
+    .payment-container {
+        grid-template-columns: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-line {
+        flex-direction: column;
+    }
+
+    .payment-information {
+        width: 100%;
+    }
+
+    .btn-container {
+        justify-content: center;
+        align-items: center;
+    }
+}
