@@ -39,3 +39,10 @@ for (let i = 0; i < menuLength; i++) {
         menuItem[i].className = "nav-link active";
     }
 }
+
+// =============================
+//Recarga del carrito 
+
+import { updateCartCount } from './managers/cartManager.js';
+
+updateCartCount();

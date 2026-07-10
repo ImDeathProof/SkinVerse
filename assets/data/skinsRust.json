@@ -1,0 +1,26 @@
+[
+    {
+        "id": 8,
+        "name": "Soulmate | Assault Rifle",
+        "type": "Assault Rifle",
+        "price": 3500,
+        "image": "/assets/img/skins/rust/Soulmate-AR.webp",
+        "game" : "rust"
+    },
+    {
+        "id": 9,
+        "name": "Pirate | Tactical Gloves",
+        "type": "Tactical Gloves",
+        "price": 7690,
+        "image": "/assets/img/skins/rust/Pirate-Tactical-Gloves.webp",
+        "game" : "rust"
+    },
+    {
+        "id": 10,
+        "name": "Heat Seeker | Assault Rifle",
+        "type": "Assault Rifle",
+        "price": 2371,
+        "image": "/assets/img/skins/rust/Heat-Seeker-AR.webp",
+        "game" : "rust"
+    }
+]

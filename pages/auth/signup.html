@@ -43,7 +43,7 @@
     <meta name="twitter:description"
         content="Registrate en SkinVerse, la plataforma líder para comprar y vender skins de videojuegos. Crea tu cuenta para gestionar tus compras, ventas y tradeos de forma segura y confiable.">
     <meta name="twitter:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
-    
+
 
     <!-- FAVICON E ICONOS PARA DIFERENTES PLATAFORMAS -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -54,6 +54,9 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="robots" content="noindex, nofollow">
+
+    <script src="/js/cartManager.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
 </head>
 <!-- BODY START -->
 
@@ -75,7 +78,8 @@
             <div class="auth-nav">
                 <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
                 <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/cart/cart.html" class="nav-link cart-link"><i class="bi bi-cart-fill"></i><span
+                        class="cart-count" data-cart-count></span></a>
             </div>
         </div>
         <div class="header-bottom">
@@ -96,7 +100,8 @@
     <!-- MAIN END -->
     <section class="form-section">
         <div class="container form-container">
-            <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse logo blanco" class="form-logo" loading="lazy">
+            <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse logo blanco" class="form-logo"
+                loading="lazy">
             <h2>Registrarse</h2>
             <form action="/api/register" method="POST" class="auth-form">
                 <label for="username">Nombre de usuario:</label>
@@ -124,7 +129,8 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins"
+                        loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">

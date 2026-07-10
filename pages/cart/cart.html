@@ -54,6 +54,10 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="robots" content="noindex, nofollow">
+
+    <script src="/js/cartManager.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
+    <script type="module" src="/js/pages/cart.js" defer></script>
 </head>
 <!-- BODY START -->
 
@@ -75,7 +79,8 @@
             <div class="auth-nav">
                 <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
                 <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/cart/cart.html" class="nav-link cart-link"><i class="bi bi-cart-fill"></i><span
+                        class="cart-count" data-cart-count></span></a>
             </div>
         </div>
         <div class="header-bottom">
@@ -96,8 +101,31 @@
     <!-- HEADER END -->
     <!-- MAIN START -->
     <main>
-        <h2>Proximamente</h2>
-        <h3>Esta página está en desarrollo</h3>
+        <section class="cart">
+            <h1>Carrito de Compras</h1>
+            <div class="cart-container">
+                <div class="cart-list" id="cart-items-container">
+                    
+                </div>
+                <div class="cart-information" id="cart-summary">
+                    <h2>Resumen del carrito</h2>
+                    <p>Cantidad de productos: <span id="total-items"></span></p>
+                    <p>Total a pagar: <span id="total-price"></span></p>
+                    <div class="cart-actions">
+                        <a class="btn-cart btn-checkout" data-action="checkout">
+                            Ir a pagar
+                        </a>
+                        <a href="" class="btn-cart btn-clear-cart" data-action="clear">
+                            Limpiar carrito
+                        </a>
+                        <a href="/pages/store/store.html" class="btn-cart btn-continue-shopping"
+                            data-action="continue-shopping">
+                            <i class="bi bi-arrow-left"></i> Seguir comprando
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- MAIN END -->
     <!-- FOOTER START -->
@@ -105,7 +133,8 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins"
+                        loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">
@@ -129,7 +158,6 @@
 
     </footer>
     <!-- FOOTER END -->
-    <script src="/js/main.js"></script>
 </body>
 <!-- BODY END -->
 

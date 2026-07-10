@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Survival Knife | Doppler",
+        "type": "Covert Knife",
+        "price": 2500000,
+        "image": "/assets/img/skins/cs2/Survival-Knife-Doppler.png",
+        "game" : "CS2"
+    },
+    {
+        "id": 2,
+        "name": "AWP | Printstream",
+        "type": "Covert Sniper Rifle",
+        "price": 160000,
+        "image": "/assets/img/skins/cs2/AWP-Printstream.png",
+        "game" : "CS2"
+    },
+    {
+        "id": 3,
+        "name": "M4A1-S | Imminent Danger",
+        "type": "Covert Rifle",
+        "price": 1860000,
+        "image": "/assets/img/skins/cs2/M4A1-S-Imminent Danger.png",
+        "game" : "CS2"
+    },
+    {
+        "id": 4,
+        "name": "AK-47 | The Oligarch",
+        "type": "Covert Rifle",
+        "price": 1327100,
+        "image": "/assets/img/skins/cs2/AK-47-The Oligarch.png",
+        "game" : "CS2"
+    }
+]

@@ -54,6 +54,9 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="robots" content="noindex, nofollow">
+
+    <script src="/js/cartManager.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
 </head>
 <!-- BODY START -->
 
@@ -75,7 +78,8 @@
             <div class="auth-nav">
                 <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
                 <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/cart/cart.html" class="nav-link cart-link"><i class="bi bi-cart-fill"></i><span
+                        class="cart-count" data-cart-count></span></a>
             </div>
         </div>
         <div class="header-bottom">
@@ -93,7 +97,8 @@
     <main>
         <section class="form-section">
             <div class="container form-container">
-                <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse logo blanco" class="form-logo" loading="lazy">
+                <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse logo blanco" class="form-logo"
+                    loading="lazy">
                 <h2>Inicia sesión</h2>
                 <form action="/api/login" method="POST" class="auth-form">
                     <div class="form-group">
@@ -124,7 +129,8 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins"
+                        loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">
@@ -147,8 +153,6 @@
             </div>
 
     </footer>
-    <!-- FOOTER END -->
-    <script src="/js/main.js"></script>
 </body>
 <!-- BODY END -->
 

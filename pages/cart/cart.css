@@ -1,16 +1,155 @@
+/* CSS Para el carrito de compras */
+.cart {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem auto;
+    padding: 1rem;
+
+    width: 100%;
+    max-width: var(--max-width);
+    min-height: 70vh;
+
+}
+
+.cart h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: stretch;
+
+    flex: 1;
+
+    border: 2px solid var(--primary-color);
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+    border-bottom: 1px solid var(--primary-color);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cart-card-img-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--bg-primary);
+}
+
+.cart-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-card-info {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.cart-card-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.cart-card-info p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.cart-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-remove-cart {
+    display: flex;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-remove-cart:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-remove-cart i {
+    margin-right: 0.5rem;
+}
+
+.cart-information {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-cart {
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+}
+
+.btn-clear-cart,
+.btn-continue-shopping {
+    color: var(--text-light);
+    font-weight: var(--font-weight-bold);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-checkout {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
 /* MEDIA QUERIES */
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
-@media (max-width: 992px) {
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 
 /* ------------------ */

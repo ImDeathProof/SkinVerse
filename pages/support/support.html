@@ -44,7 +44,7 @@
         content="¿Necesitas ayuda? Contacta al soporte de SkinVerse para resolver tus dudas sobre compras, ventas y tradeo de skins. Respondemos en menos de 24 horas.">
     <meta name="twitter:image" content="https://skinverse.netlify.app/assets/img/main/logos/logo_1200x630.png">
 
-    
+
     <!-- FAVICON E ICONOS PARA DIFERENTES PLATAFORMAS -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -54,6 +54,9 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="robots" content="index, follow">
+
+    <script src="/js/cartManager.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
 </head>
 <!-- BODY START -->
 
@@ -75,7 +78,8 @@
             <div class="auth-nav">
                 <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
                 <a href="/pages/signup.html" class="btn-auth">Registrarse</a>
-                <a href="/pages/cart/cart.html" class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <a href="/pages/cart/cart.html" class="nav-link cart-link"><i class="bi bi-cart-fill"></i><span
+                        class="cart-count" data-cart-count></span></a>
             </div>
         </div>
         <div class="header-bottom">
@@ -154,7 +158,8 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-col logo">
-                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins" loading="lazy">
+                    <img src="/assets/img/main/logos/logo_footer.webp" alt="skinverse compra,venta y tradeo de skins"
+                        loading="lazy">
                     <p>Compra y venta de skins de videojuegos de forma segura y confiable.</p>
                 </div>
                 <div class="footer-col footer-nav">
@@ -178,7 +183,6 @@
 
     </footer>
     <!-- FOOTER END -->
-    <script src="/js/main.js"></script>
 </body>
 <!-- BODY END -->
 

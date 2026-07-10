@@ -1,0 +1,26 @@
+[
+    {
+        "id": 5,
+        "name": "Hoja Carmesí de la Orden Perdida con Inscripciones",
+        "type": "Arma",
+        "price": 1200000,
+        "image": "/assets/img/skins/dota2/Hoja-Carmesí-de-la-Orden-Perdida-con-Inscripciones.webp",
+        "game" : "dota2"
+    },
+    {
+        "id": 6,
+        "name": "Capa del Artificio Oscuro",
+        "type": "Espalda",
+        "price": 190000,
+        "image": "/assets/img/skins/dota2/Capa-del-Artificio-Oscuro.webp",
+        "game" : "dota2"
+    },
+    {
+        "id": 7,
+        "name": "Cuernos Fractales del Abismo Interior",
+        "type": "Cabeza",
+        "price": 33000,
+        "image": "/assets/img/skins/dota2/Cuernos-Fractales-del-Abismo-Interior.webp",
+        "game" : "dota2"
+    }
+]
