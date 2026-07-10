@@ -49,25 +49,34 @@ Para estructurar las diferentes paginas que componen esta web se utilizaron las 
 Algunas capturas de como se ve la página
 
 ### Home
-![Screenshot Home 1](/img/screenshots/home1.png)
-![Screenshot Home 2](/img/screenshots/home2.png)
-![Screenshot Home 3](/img/screenshots/home3.png)
-![Screenshot Home 4](/img/screenshots/home4.png)
-![Screenshot Home 5](/img/screenshots/home5.png)
+![Screenshot Home 1](/assets/img/screenshots/home1.png)
+![Screenshot Home 2](/assets/img/screenshots/home2.png)
+![Screenshot Home 3](/assets/img/screenshots/home3.png)
+![Screenshot Home 4](/assets/img/screenshots/home4.png)
+![Screenshot Home 5](/assets/img/screenshots/home5.png)
 
 ### Tienda
-![Screenshot Store](/img/screenshots/store.png)
+![Screenshot Store 1](/assets/img/screenshots/store.png)
+![Screenshot Store 2](/assets/img/screenshots/store2.png)
+
+### Carrito
+![Screenshot Cart](/assets/img/screenshots/cart.png)
+
+
+### Proceso de Pagos
+![Screenshot Payment](/assets/img/screenshots/payment.png)
+
 
 ### Soporte
-![Screenshot Support 1](/img/screenshots/support.png)
-![Screenshot Support 2](/img/screenshots/support2.png)
-![Screenshot Support 3](/img/screenshots/support3.png)
+![Screenshot Support 1](/assets/img/screenshots/support.png)
+![Screenshot Support 2](/assets/img/screenshots/support2.png)
+![Screenshot Support 3](/assets/img/screenshots/support3.png)
 
 ### Login
-![Screenshot login](/img/screenshots/login.png)
+![Screenshot login](/assets/img/screenshots/login.png)
 
 ### Signup
-![Screenshot signup](/img/screenshots/signup.png)
+![Screenshot signup](/assets/img/screenshots/signup.png)
 
 ---
 
