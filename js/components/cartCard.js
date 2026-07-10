@@ -10,7 +10,7 @@ export function createCartCard(product, quantity) {
         <p class="cart-card-price">Precio: $${product.price}</p>
         <div class="cart-card-actions">
             <label for="quantity">Cantidad:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="${quantity}">
+            <input type="number" data-action="quantity" data-id="${product.id}" name="quantity" min="1" value="${quantity}">
             <button class="btn btn-remove-cart" data-action="remove" data-id="${product.id}"> <i class="bi bi-trash"></i>
                 Eliminar</button>
         </div>

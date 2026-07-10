@@ -1,6 +1,6 @@
 // Codigo para la página del carrito
 
-import { getCart, removeFromCart } from '../managers/cartManager.js';
+import { getCart, removeFromCart, clearCart, updateCartItemQuantity } from '../managers/cartManager.js';
 import { createCartCard } from '../components/cartCard.js';
 import { productManager } from '../managers/productManager.js';
 import { loadAllProducts } from '../api/productsApi.js';
@@ -60,9 +60,30 @@ function setupCartEvents() {
         if (totalItems === 0) {
             e.preventDefault();
             alert('El carrito está vacío. Agrega productos antes de proceder al pago.');
+            return;
         }
         updatePaymentSummary(totalItems, cartTotal);
-        console.log('Payment summary saved:', {totalItems, cartTotal});
+        console.log('Payment summary saved:', { totalItems, cartTotal });
         window.location.href = '/pages/payment/payment.html';
+    });
+
+    cartSummaryContainer.addEventListener('click', (e) => {
+        const button = e.target.closest('a[data-action="clear"]');
+        if (!button) return;
+        clearCart();
+        clearPaymentSummary();
+        renderCartItems();
+    })
+
+    cartItemsContainer.addEventListener('change', (e) => {
+        const input = e.target.closest('input[data-action="quantity"]');
+
+        if (!input) return;
+
+        const productId = Number(input.dataset.id);
+        const quantity = Number(input.value);
+
+        updateCartItemQuantity(productId, quantity);
+        renderCartItems();
     });
 }

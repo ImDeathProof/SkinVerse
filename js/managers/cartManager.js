@@ -32,6 +32,16 @@ export function clearCart() {
     updateCartCount();
 }
 
+export function updateCartItemQuantity(productId, quantity) {
+    const cart = getCart();
+    const productIndex = cart.findIndex(item => item.id === productId);
+    if (productIndex !== -1) {
+        cart[productIndex].quantity = quantity;
+        saveCart(cart);
+        updateCartCount();
+    }
+}
+
 export function updateCartCount() {
     const cart = getCart();
     const cartCountElement = document.querySelector('[data-cart-count]');
