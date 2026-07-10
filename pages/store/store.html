@@ -72,10 +72,10 @@
             <button class="menu-toggle" aria-label="Desplegar menu" aria-expanded="false" aria-controls="main-nav">
                 <i class="bi bi-list"></i>
             </button>
-            <div class="search-container">
-                <input type="text" placeholder="Buscar skins, juegos y más...">
-                <button><i class="bi bi-search"></i></button>
-            </div>
+            <form class="search-container" action="/pages/store/store.html" method="GET">
+                <input type="text" name="search" placeholder="Buscar skins, juegos y más...">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
             <div class="auth-nav">
                 <a href="/pages/auth/login.html" class="btn-auth">Iniciar sesión</a>
                 <a href="/pages/auth/signup.html" class="btn-auth">Registrarse</a>

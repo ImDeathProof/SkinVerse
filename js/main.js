@@ -46,3 +46,5 @@ for (let i = 0; i < menuLength; i++) {
 import { updateCartCount } from './managers/cartManager.js';
 
 updateCartCount();
+
+// =============================

@@ -31,6 +31,16 @@ export const productManager = {
             return this.list;
         }
         return this.list.filter(product => product.game.toLowerCase() === game.toLowerCase());
+    },
+    searchProducts: function (searchTerm) {
+        if (!searchTerm) return this.list;
+        const lowerCaseSearchTerm = searchTerm.toLowerCase();
+        return this.list.filter(product =>
+            product.name.toLowerCase().includes(lowerCaseSearchTerm) ||
+            product.type.toLowerCase().includes(lowerCaseSearchTerm) ||
+            product.game.toLowerCase().includes(lowerCaseSearchTerm)
+        );
     }
+
 
 }

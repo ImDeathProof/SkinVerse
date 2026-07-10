@@ -16,7 +16,18 @@ const productsContainer = document.getElementById('store-container');
 async function initStore() {
     const products = await loadAllProducts();
     productManager.load(products);
-    renderProducts(productManager.getAll());
+    let productsList;
+    // Revisa si hay alguna busqueda
+    const params = new URLSearchParams(window.location.search);
+    const searchTerm = params.get("search");
+
+    if (searchTerm) {
+        productsList = productManager.searchProducts(searchTerm);
+    } else {
+        productsList = productManager.getAll();
+    }
+
+    renderProducts(productsList);
 
     setupGameFilter();
     setupCartEvents();
